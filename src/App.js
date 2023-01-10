@@ -27,9 +27,7 @@ const submit =()=>{
   if(question && option_a && option_b && option_c && option_d && correct_option){
       axios.post("http://localhost:9002/formdata", user)
       .then( res => {
-          // alert(res.data.message)
-          // console.log(res)
-          alert("Successfully submited...")
+        alert(res.data.message)
       })
   } else {
       alert("invlid input")
